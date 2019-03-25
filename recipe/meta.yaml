@@ -9,7 +9,7 @@ source:
   sha256: e1feafd2a5b1d4cfc20facae8ad901e5ed003e7168279fb798dbc60f0d1753dc
 
 build:
-  number: 0
+  number: 1
   # mpfr only supports vc14
   skip: true  # [win and vc<14]
 
@@ -19,11 +19,11 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - boost-cpp
+    - boost-cpp {{ boost_version }}
     - mpfr
     - eigen
   run:
-    - boost-cpp
+    - boost-cpp {{ boost_version }}
     - mpfr
 
 test:
