@@ -10,8 +10,11 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_:
-        CONFIG: linux_
+      linux_boost_version1.68.0:
+        CONFIG: linux_boost_version1.68.0
+        UPLOAD_PACKAGES: True
+      linux_boost_version1.69.0:
+        CONFIG: linux_boost_version1.69.0
         UPLOAD_PACKAGES: True
   steps:
   - script: |
