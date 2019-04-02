@@ -8,6 +8,9 @@
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include <CGAL/Boolean_set_operations_2.h>
 
+// Just to ensure that Eigen's CMake configuration is correct
+#include <Eigen/Dense>
+
 typedef CGAL::Exact_predicates_exact_constructions_kernel_with_sqrt K;
 typedef K::Point_3 Point;
 typedef CGAL::Surface_mesh<Point> Mesh;
