@@ -1,7 +1,7 @@
-boost:
-- 1.68.0
-boost_version:
-- 1.68.0
+CMAKE_GENERATOR:
+- NMake Makefiles
+boost_cpp:
+- 1.70.0
 c_compiler:
 - vs2015
 channel_sources:
@@ -13,7 +13,7 @@ cxx_compiler:
 mpfr:
 - '4'
 pin_run_as_build:
-  boost:
+  boost-cpp:
     max_pin: x.x.x
   mpfr:
     max_pin: x

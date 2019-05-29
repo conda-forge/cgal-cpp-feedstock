@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.14)
 
 # Based on minimal example in https://github.com/CGAL/cgal/wiki/How-to-use-CGAL-with-CMake-or-your-own-build-system
 # but with Qt dependency removed
 
 project(test_cgal)
-find_package(Boost REQUIRED COMPONENTS thread)
+find_package(Boost REQUIRED COMPONENTS system thread)
 find_package(CGAL REQUIRED COMPONENTS Core)
 
 # Eigen3 was added to the test in order to ensure that FindEigen3.cmake from
