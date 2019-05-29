@@ -1,5 +1,5 @@
 boost:
-- 1.68.0
+- 1.70.0
 boost_version:
 - 1.69.0
 c_compiler:
