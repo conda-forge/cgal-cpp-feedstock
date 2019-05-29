@@ -10,7 +10,6 @@ source:
 
 build:
   number: 1
-  # mpfr only supports vc14
   skip: true  # [win and vc<14]
 
 requirements:
@@ -19,11 +18,11 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - boost-cpp {{ boost_version }}
+    - boost-cpp
     - mpfr
     - eigen
   run:
-    - boost-cpp {{ boost_version }}
+    - boost-cpp
     - mpfr
     - eigen
 
@@ -41,8 +40,6 @@ test:
     - test -f ${PREFIX}/include/CGAL/AABB_tree.h  # [unix]
     - test -f ${PREFIX}/lib/libCGAL${SHLIB_EXT}  # [unix]
     - if not exist %LIBRARY_INC%\CGAL\AABB_tree.h exit 1  # [win]
-    - conda inspect linkages $PKG_NAME  # [unix]
-    - conda inspect objects $PKG_NAME  # [osx]
 
     # Builds a simple program
     - cd test
