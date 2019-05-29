@@ -1,6 +1,6 @@
 CMAKE_GENERATOR:
 - NMake Makefiles
-boost:
+boost_cpp:
 - 1.70.0
 c_compiler:
 - vs2015
@@ -13,7 +13,7 @@ cxx_compiler:
 mpfr:
 - '4'
 pin_run_as_build:
-  boost:
+  boost-cpp:
     max_pin: x.x.x
   mpfr:
     max_pin: x

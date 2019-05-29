@@ -1,4 +1,4 @@
-boost:
+boost_cpp:
 - 1.70.0
 c_compiler:
 - gcc
@@ -17,7 +17,7 @@ docker_image:
 mpfr:
 - '4'
 pin_run_as_build:
-  boost:
+  boost-cpp:
     max_pin: x.x.x
   mpfr:
     max_pin: x
