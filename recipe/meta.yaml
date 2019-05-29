@@ -50,7 +50,7 @@ test:
     - cmake .. -G"$CMAKE_GENERATOR" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [unix]
     - cmake --build . --config Release
     - ./test_  # [unix]
-    - Release\\test_.exe  # [win]
+    - test_.exe  # [win]
     - cd ..
 
     - mkdir build_ninja
