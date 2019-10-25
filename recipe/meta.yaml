@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/CGAL/cgal/releases/download/releases/CGAL-{{ version }}/CGAL-{{ version }}.zip
-  sha256: 0841eee63c1273f327ef1331facbafffa77b527d76e5933d07f6b315bc34e135
+  url: https://github.com/CGAL/cgal/releases/download/releases/CGAL-{{ version }}/CGAL-{{ version }}.tar.xz
+  sha256: d4ec2528b88a7c3a07b0b86db96c216822f85b951bf4bc7f9d1f26bf6c369afe
 
 build:
   number: 0
