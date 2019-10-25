@@ -46,7 +46,7 @@ test:
 
     - mkdir build_default
     - cd build_default
-    - cmake .. -G"%CMAKE_GENERATOR%" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [win]
+    - cmake .. -G"NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [win]
     - cmake .. -G"$CMAKE_GENERATOR" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [unix]
     - cmake --build . --config Release
     - ./test_  # [unix]
