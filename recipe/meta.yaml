@@ -38,7 +38,6 @@ test:
   commands:
     - echo on  # [win]
     - test -f ${PREFIX}/include/CGAL/AABB_tree.h  # [unix]
-    - test -f ${PREFIX}/lib/libCGAL${SHLIB_EXT}  # [unix]
     - if not exist %LIBRARY_INC%\CGAL\AABB_tree.h exit 1  # [win]
 
     # Builds a simple program
