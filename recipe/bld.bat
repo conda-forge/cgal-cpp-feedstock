@@ -12,6 +12,7 @@ cmake -LAH -G"%CMAKE_GENERATOR%" ^
   -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
   -DWITH_CGAL_ImageIO=OFF ^
   -DWITH_CGAL_Qt5=OFF ^
+  -DBoost_USE_STATIC_LIBS=OFF ^
   .. || goto :eof
 
 cmake --build . --config %CMAKE_CONFIG% --target INSTALL || goto :eof
