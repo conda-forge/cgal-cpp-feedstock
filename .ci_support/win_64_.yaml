@@ -1,19 +1,15 @@
+CMAKE_GENERATOR:
+- NMake Makefiles
 boost_cpp:
 - '1.72'
 c_compiler:
-- gcc
-c_compiler_version:
-- '7'
+- vs2017
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- gxx
-cxx_compiler_version:
-- '7'
-docker_image:
-- condaforge/linux-anvil-comp7
+- vs2017
 mpfr:
 - '4'
 pin_run_as_build:
@@ -21,3 +17,7 @@ pin_run_as_build:
     max_pin: x.x.x
   mpfr:
     max_pin: x
+target_platform:
+- win-64
+vc:
+- '14'
