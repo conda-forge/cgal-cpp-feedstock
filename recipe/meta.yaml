@@ -45,7 +45,7 @@ test:
 
     - mkdir build_default
     - cd build_default
-    - cmake .. -G"NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [win]
+    - cmake .. -G"NMake Makefiles" -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [win]
     - cmake .. -G"$CMAKE_GENERATOR" -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON  # [unix]
     - cmake --build . --config Release
     - ./test_  # [unix]
@@ -54,7 +54,8 @@ test:
 
     - mkdir build_ninja
     - cd build_ninja
-    - cmake .. -G"Ninja" -DCMAKE_BUILD_TYPE=Release
+    - cmake .. -G"Ninja" -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_BUILD_TYPE=Release  # [win]
+    - cmake .. -G"Ninja" -DCMAKE_BUILD_TYPE=Release  # [unix]
     - cmake --build . --config Release
     - ./test_  # [unix]
     - test_.exe  # [win]
