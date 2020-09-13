@@ -1,15 +1,21 @@
-CMAKE_GENERATOR:
-- NMake Makefiles
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
 boost_cpp:
-- '1.72'
+- 1.72.0
 c_compiler:
-- vs2017
+- clang
+c_compiler_version:
+- '10'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- clangxx
+cxx_compiler_version:
+- '10'
+macos_machine:
+- x86_64-apple-darwin13.4.0
 mpfr:
 - '4'
 pin_run_as_build:
@@ -18,6 +24,4 @@ pin_run_as_build:
   mpfr:
     max_pin: x
 target_platform:
-- win-64
-vc:
-- '14'
+- osx-64
