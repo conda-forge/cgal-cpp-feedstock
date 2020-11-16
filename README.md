@@ -5,11 +5,9 @@ Home: http://www.cgal.org/
 
 Package license: GPL3/LGPL3
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cgal-cpp-feedstock/blob/master/LICENSE.txt)
 
 Summary: Computational Geometry Algorithms Library
-
-
 
 Current build status
 ====================
