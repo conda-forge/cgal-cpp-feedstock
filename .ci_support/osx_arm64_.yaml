@@ -21,8 +21,6 @@ mpfr:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  mpfr:
-    max_pin: x
 target_platform:
 - osx-arm64
 zip_keys:
