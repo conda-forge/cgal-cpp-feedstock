@@ -1,11 +1,11 @@
-About cgal-cpp
-==============
+About cgal-cpp-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cgal-cpp-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.cgal.org/
 
 Package license: GPL3/LGPL3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cgal-cpp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Computational Geometry Algorithms Library
 
@@ -197,5 +197,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@lrineau](https://github.com/lrineau/)
 * [@tadeu](https://github.com/tadeu/)
 
