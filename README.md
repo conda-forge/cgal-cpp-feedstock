@@ -197,5 +197,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@lrineau](https://github.com/lrineau/)
 * [@tadeu](https://github.com/tadeu/)
 
