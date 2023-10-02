@@ -12,7 +12,7 @@ source:
       # upstream patch from https://github.com/CGAL/cgal/pull/7635
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -22,11 +22,12 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - boost-cpp
+    - libboost-devel
     - mpfr
     - eigen
   run:
-    - boost-cpp
+    # cgal needs boost headers & metadata at runtime to be usable
+    - libboost-devel
     - mpfr
     - eigen
 
