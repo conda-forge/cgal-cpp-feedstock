@@ -26,6 +26,8 @@ requirements:
     - mpfr
     - eigen
   run:
+    # cgal needs boost headers & metadata at runtime to be usable
+    - libboost-devel
     - mpfr
     - eigen
 
