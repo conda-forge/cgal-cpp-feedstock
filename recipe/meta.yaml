@@ -7,9 +7,6 @@ package:
 source:
   url: https://github.com/CGAL/cgal/releases/download/v{{ version }}/CGAL-{{ version }}.tar.xz
   sha256: cdb15e7ee31e0663589d3107a79988a37b7b1719df3d24f2058545d1bcdd5837
-  patches:
-    - pr7635.patch
-      # upstream patch from https://github.com/CGAL/cgal/pull/7635
 
 build:
   number: 0
