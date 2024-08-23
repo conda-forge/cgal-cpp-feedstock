@@ -1,5 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
+MACOSX_SDK_VERSION:
+- '11.0'
 c_compiler:
 - clang
 c_compiler_version:
@@ -17,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 libboost_devel:
-- '1.84'
+- '1.86'
 macos_machine:
 - arm64-apple-darwin20.0.0
 mpfr:
@@ -27,5 +29,3 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - c_stdlib_version
-  - MACOSX_DEPLOYMENT_TARGET
