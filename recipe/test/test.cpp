@@ -4,6 +4,7 @@
 #include <CGAL/Exact_predicates_exact_constructions_kernel_with_sqrt.h>
 #include <CGAL/Surface_mesh.h>
 #include <CGAL/boost/graph/helpers.h>
+#include <CGAL/boost/graph/generators.h>
 
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include <CGAL/Boolean_set_operations_2.h>
