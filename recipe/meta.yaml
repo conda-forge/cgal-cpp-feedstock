@@ -1,4 +1,4 @@
-{% set version = "6.0" %}
+{% set version = "6.0.1" %}
 
 package:
   name: cgal-cpp
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/CGAL/cgal/releases/download/v{{ version }}/CGAL-{{ version }}.tar.xz
-  sha256: 6b0c9b47c7735a2462ff34a6c3c749d1ff4addc1454924b76263dc60ab119268
+  sha256: 0acdfbf317c556630dd526f3253780f29b6ec9713ee92903e81b5c93c0f59b7f
 
 build:
   number: 0
