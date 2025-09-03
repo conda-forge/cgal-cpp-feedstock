@@ -1,11 +1,12 @@
-{% set version = "6.1-beta1" %}
+{% set version = "6.1_beta1" %}
+{% set version_hyphen = "6.1-beta1" %}
 
 package:
   name: cgal-cpp
   version: {{ version }}
 
 source:
-  url: https://github.com/CGAL/cgal/releases/download/v{{ version }}/CGAL-{{ version }}.tar.xz
+  url: https://github.com/CGAL/cgal/releases/download/v{{ version_hyphen }}/CGAL-{{ version_hyphen }}.tar.xz
   sha256: 0acdfbf317c556630dd526f3253780f29b6ec9713ee92903e81b5c93c0f59b7f
 
 build:
