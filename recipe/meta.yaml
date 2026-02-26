@@ -9,7 +9,7 @@ source:
   sha256: 52506935f70e247ed2777e3c65f20e86f79208c2a2d0e180ae7475daf11c96ef
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
     - libboost-devel
     - mpfr
     - eigen
+    - eigen-abi-devel
   run:
     # cgal needs boost headers & metadata at runtime to be usable
     - libboost-devel
