@@ -8,6 +8,8 @@ channel_targets:
 - conda-forge main
 cxx_compiler:
 - vs2022
+eigen_abi_devel:
+- 5.0.1
 libboost_devel:
 - '1.88'
 mpfr:
