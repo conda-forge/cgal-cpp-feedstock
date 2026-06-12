@@ -21,7 +21,7 @@ cxx_compiler_version:
 eigen_abi_devel:
 - 5.0.1
 libboost_devel:
-- '1.88'
+- '1.90'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpfr:
